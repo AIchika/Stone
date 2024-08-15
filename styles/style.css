@@ -1,0 +1,767 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish';
+}
+
+/* Body */
+body {
+    background-image: url('https://tyler.com/wp-content/uploads/2023/11/stone-banner-01.jpg');
+    background-repeat: no-repeat;
+    object-position: 50% 51%;
+}
+
+/* Navbar */
+.navbar {
+    padding-top: 20%;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+
+/* Hero */
+.cover-container {
+    height: 100vh;
+    min-height: 520px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.cover-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.cover-heading {
+    font-size: 4.41rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 1.01rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.btn-lg {
+    padding: 1.01rem 1.5rem;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #1173c5;
+    border-color: #1173c5;
+}
+
+/************************** Feature Section *********************/
+
+.feature-section {
+    background-color: #1b253d;
+    color: #ffffff;
+}
+
+.feature-item {
+    position: relative;
+}
+
+.feature-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px; 
+    background-color: #ccc; 
+    left: calc(100% - 1rem); 
+}
+
+.feature-item:last-child::after {
+    display: none; 
+}
+
+
+
+
+@media (max-width: 767.98px) {
+    .feature-item::before {
+        margin-left: -0.5rem;
+    }
+}
+
+.feature-number {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 0.8;
+    margin-bottom: 0;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1.8rem;
+    color: #ffffff;
+}
+
+.feature-description {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 1.8rem;
+    color: #f3f3f3;
+}
+
+.feature-separator {
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+    margin: 0 2rem;
+}
+
+@media (max-width: 767.98px) {
+    .feature-separator {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .feature-item {
+        padding: 20px;
+    }
+}
+
+/************************* About Section *******************/
+
+.about-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.cover-image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-title {
+    font-size: 2.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 0.6;
+    color: #141e31;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.line-image {
+    width: 200px;
+    height: 3px;
+    object-fit: cover;
+}
+
+.about-description {
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #3f3f3f;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.request-button {
+    text-align: right;
+}
+
+.call-button {
+    display: flex;
+    align-items: center;
+    border-radius: 0;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-weight: 600;
+    padding: 1.01rem 1rem;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #1173c5;
+    border-color: #1173c5;
+    border-radius: 0 !important;
+}
+
+.btn-secondary {
+    color: #141e31;
+    background-color: #ffffff;
+    border-color: #141e31;
+}
+
+@media (max-width: 767.98px) {
+    .about-content {
+        text-align: center;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .request-button {
+        text-align: center;
+    }
+
+    .call-button {
+        margin-top: 1rem;
+    }
+}
+
+/**************************** Practice Section **************************/
+
+
+.practice-area-section {
+    background-image: url("https://tyler.com/wp-content/uploads/2023/11/stone-practice-area.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 5.5rem 0;
+}
+
+
+.practice-area-inner {
+    color: #ffffff;
+    text-align: center;
+}
+
+.practice-area-title {
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.practice-area-column {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+.practice-area-column:last-child {
+    margin-right: 0;
+}
+
+.practice-area-columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.practice-area-column:nth-child(n+4) {
+    margin-top: 20px;
+}
+
+
+.practice-area-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.practice-area-title-sm {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.practice-area-description {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.practice-area-cta {
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.practice-area-cta:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 767.98px) {
+    .practice-area-column {
+        flex: 100%;
+    }
+}
+
+/**************************** Team Section **************************/
+
+.team-section {
+    color: #3f3f3f;
+    padding-top: 5.01rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    font-size: 1.13rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.left-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.right-column {
+    flex: 1;
+}
+
+.team-title {
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #3f3f3f;
+    font-family: 'Cormorant', serif;
+}
+
+.team-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #3f3f3f;
+    font-family: 'Mulish', sans-serif;
+}
+
+.team-cta {
+    background-color: #1173c5;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    border-radius: 0px;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-members {
+    margin-top: 0px;
+}
+
+
+.team-member-img {
+    padding-top: 40px;
+    width: 318px;
+}
+
+.team-member-name {
+    color: #1c2a45;
+    font-size: 1.6rem;
+    line-height: 1.0;
+    font-family: 'Cormorant', serif;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.team-member-position {
+    color: #1173c5;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Mulish', sans-serif;
+    text-align: left;
+    margin-top: 5px;
+}
+
+/* For screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 767.98px) {
+    .team-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-column {
+        margin-bottom: 20px;
+    }
+
+    .right-column {
+        margin-bottom: 20px;
+    }
+
+    .team-members {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+/* For screens larger than 768px */
+@media (min-width: 768px) {
+    .team-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left-column {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .right-column {
+        flex: 2;
+    }
+
+    .team-members {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .team-member {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .team-member:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
+/**************************** Testimonial Section **************************/
+
+
+.testimonials-section {
+    padding: 5.5rem 1rem;
+    background-color: #e7f4ff;
+    color: #3f3f3f;
+    font-size: 1.13rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.testimonials-title {
+    text-align: center;
+    font-size: 2.9rem;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    color: #141e31;
+    margin-bottom: 0;
+}
+
+.testimonials-line {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.testimonial {
+    background-color: #ffffff;
+    padding: 2.1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.testimonial-quote {
+    width: 30px;
+    aspect-ratio: 1.164179104477612;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #1c2a45;
+}
+
+.testimonial-name {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #1c2a45;
+    margin-top: 1.3rem;
+}
+
+/************************ Contact Form *********************/
+
+@media screen and (max-width: 768px) {
+    .contact-section .container {
+        padding-top: 20px;
+    }
+
+    .contact-title {
+        padding-top: 20px;
+
+    }
+
+    .title-group {
+        padding-top: 10px;
+    }
+
+    .description-group {
+        padding-top: 10px;
+    }
+
+    .phone-group {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .contact-section .container {
+        padding-bottom: 40px;
+    }
+}
+
+
+.contact-section {
+    padding: 4.01rem 1rem 4.8rem;
+    background-color: #f7f7f7;
+    color: #3f3f3f;
+    font-size: 1.13rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.contact-title {
+    text-align: left;
+    font-size: 2.9rem;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    color: #141e31;
+    margin-bottom: 0;
+}
+
+.title-group {
+    color: #141e31;
+    margin-bottom: 0rem;
+    font-size: clamp(1.696rem, 1.696rem + ((1vw - 0.2rem) * 2.189), 2.9rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+
+}
+
+.title-group h2 {
+    font-size: 48px;
+}
+
+
+.description-group {
+    padding-right: 10%;
+    margin-top: 2rem;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.phone-group {
+    flex-wrap: nowrap;
+    gap: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.phone-group a {
+    text-decoration: none;
+    color: #0b1018;
+    font-size: 24px;
+}
+
+.contact-description {
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    color: #3f3f3f;
+    margin-bottom: 2rem;
+}
+
+.contact-phone {
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    color: #3f3f3f;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.contact-phone-number {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.form {
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    flex-basis: 50%;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    margin: 0;
+}
+
+.contact-form .form-outline {
+    margin-bottom: 1rem;
+}
+
+.contact-form .form-outline label {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    color: #3f3f3f;
+    margin-bottom: 0.25rem;
+}
+
+.contact-form .form-outline input,
+.contact-form .form-outline textarea {
+    background-color: #f7f7f7;
+    border: 1px solid #3f3f3f;
+    border-radius: 3px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    color: #3f3f3f;
+    height: auto;
+}
+
+.contact-form .form-outline textarea {
+    resize: vertical;
+}
+
+.contact-form .btn-primary {
+    margin-top: 1rem;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #0b1018;
+    border-color: #0b1018;
+}
+
+/*********************** footer ********************/
+
+.footer {
+    background-color: #1b253d;
+    margin: 0 auto;
+    padding-top: 10px;
+    color: #fff;
+    font-family: "Mulish";
+    font-style: normal;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer hr {
+    size: 0.1px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer .container {
+        justify-self: start;
+        text-align: left;
+    }
+}
+
+.feedback {
+    position: fixed;
+    bottom: 20px; 
+    left: 0px;
+    z-index: 1000;
+  }
+  
+
+  #feedbck {
+    width: 48px; 
+    padding: 4px; 
+    color: #fffffd;
+    background-color: rgba(20, 20, 20, 1);
+    font-size: 18px; 
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    position: relative; 
+  }
+
+  
+  
+  
